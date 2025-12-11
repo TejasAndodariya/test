@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<form action="save.php" method="POST">
+    Name:<br>
+    <input type="text" name="name" required><br><br>
+
+    Roll No (11 digits):<br>
+    <input type="text" name="roll_no" pattern="[0-9]{11}" required><br><br>
+
+    GR No (6 digits):<br>
+    <input type="text" name="gr_no" pattern="[0-9]{6}" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<br><br>
+
+<a href="admin-login.php">Admin Login</a>
+
+</body>
+</html>
